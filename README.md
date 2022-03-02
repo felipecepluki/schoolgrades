@@ -1,15 +1,19 @@
 ![Banner](src/assets/banner.png)
 
 # School Grades
-## This project aims to facilitate the process of calculating the average required for annual approval, whether in school or high school.
+> This project aims to facilitate the process of calculating the average required for annual approval, whether in school or high school.
 &nbsp;
 
-## <center> 🚧  School Grades 🎓 Under Construction  ...  🚧
+<h3 align="center"> 🚧  School Grades 🎓 Under Construction  ...  🚧 </h3>
 &nbsp;
+  
+<p align="center">
+  <img src="https://media.giphy.com/media/o33OFvMOQi9ATfe6ft/giphy.gif" />
+</p>
 
 # Contents
 <!--ts-->
-* [About](#About)
+* [About](#about)
 * [Installation](#installation)
   * [Pre-requisites](#pre-requisites) 
   * [Run this project](#run-this-project)
@@ -18,9 +22,7 @@
 * [Contribution](#contribution)
 * [License](#license)
   <!--te-->
-&nbsp;
 
-&nbsp;
 # About
 ### Features
 - [x] Calculate how much is left to pass to bimester and quarter
@@ -30,7 +32,6 @@
 - [ ] Calculate how much is missing for the average within each subject in the bimester or quarter
 - [ ] Adapt for college or university
 
-&nbsp;
 # Installation
 ### Pre-requisites
 
@@ -51,7 +52,6 @@ yarn install
 ```bash
 expo start
 ```
-&nbsp;
 
 # Technologies
 The following tools were used in building the project:
@@ -60,13 +60,12 @@ The following tools were used in building the project:
 - [React](https://pt-br.reactjs.org/)
 - [React Native](https://reactnative.dev/)
 - [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
-&nbsp;
 
 # Design
-The design of this app was made using [Figma](https://www.figma.com/).
-It is available at [School Grades](https://www.figma.com/file/8nADgFXJaOXiPB14g1Eug9/schoolgrades?node-id=0%3A1)
+The design of this app was made using [Figma](https://www.figma.com/). It is available at [School Grades](https://www.figma.com/file/8nADgFXJaOXiPB14g1Eug9/schoolgrades?node-id=0%3A1).
 
-&nbsp;
+The gif present at the beginning of this readme was made using [GIPHY](https://giphy.com/)
+
 # Contribution
 Contribute freely to this project, as long as you contribute in accordance with the MIT license guidelines.
 
@@ -74,7 +73,6 @@ For commit, run:
 ```bash
 yarn commit
 ```
-&nbsp;
 
 # License
 [MIT License](./LICENSE) © School Grades
