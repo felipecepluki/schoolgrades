@@ -4,10 +4,8 @@
 ## This project aims to facilitate the process of calculating the average required for annual approval, whether in school or high school.
 &nbsp;
 
-
 ## <center> 🚧  School Grades 🎓 Under Construction  ...  🚧
 &nbsp;
-
 
 # Contents
 <!--ts-->
@@ -21,8 +19,6 @@
 * [License](#license)
   <!--te-->
 &nbsp;
-
-Preview app (precisa buildar primeiro)
 
 &nbsp;
 # About
