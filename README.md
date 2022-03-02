@@ -8,7 +8,9 @@
 ## <center> 🚧  School Grades 🎓 Under Construction  ...  🚧
 &nbsp;
 
+<figure class="video_container">
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="650" height="750" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F8nADgFXJaOXiPB14g1Eug9%2Fschoolgrades%3Fnode-id%3D2%253A2%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D2%253A2" allowfullscreen></iframe>
+</figure>
 
 &nbsp;
 
@@ -77,7 +79,6 @@ It is available at [School Grades](https://www.figma.com/file/8nADgFXJaOXiPB14g1
 # Contribution
 Contribute freely to this project, as long as you contribute in accordance with the MIT license guidelines.
 
-&nbsp;
 For commit, run:
 ```bash
 yarn commit
