@@ -22,8 +22,8 @@ import {
 
 export default function Home() {
   const [yearDivision, setYearDivision] = useState(0);
-  const [valueOne, setValueOne] = useState(0);
-  const [valueTwo, setValueTwo] = useState(0);
+  const [valueOne, setValueOne] = useState("");
+  const [valueTwo, setValueTwo] = useState("");
 
   const pickerRef = useRef();
 
@@ -36,12 +36,17 @@ export default function Home() {
   }
 
   function Result() {
-    const average = parseFloat(valueOne) * parseFloat(yearDivision);
-    const remaining = average - parseFloat(valueTwo);
-    const remainingperiods = yearDivision - 1;
-    const results = remaining / remainingperiods;
-    const finalresults = results.toFixed(2);
-    alert(`Missing ${finalresults} points in each period for you to pass!`);
+    const schoolaverage = parseFloat(valueOne.replace(",", "."));
+    const firstaverage = parseFloat(valueTwo.replace(",", "."));
+    const averageyear = schoolaverage * parseFloat(yearDivision);
+    const averageneeded = parseFloat(averageyear - firstaverage);
+    const period = parseFloat(yearDivision) - parseFloat(1);
+    const averageperiod = averageneeded / period;
+    alert(
+      `You need ${averageperiod.toFixed(2)} ${averageneeded.toFixed(
+        2
+      )} points in each remaining bimester / quarter to pass`
+    );
   }
 
   const [fontsLoaded] = useFonts({
@@ -103,14 +108,14 @@ export default function Home() {
               fontFamily: "BebasNeue_400Regular",
             }}
           >
-            Write your first average
+            Write your high school average
           </Text>
           <Input
             onChangeText={(text) => setValueOne(text)}
-            placeholder="7,0"
+            placeholder="9,0"
             placeholderTextColor="#8393EE"
-            keyboardType="decimal-pad"
-            returnKeyType="next"
+            keyboardType="numeric"
+            returnKeyType="send"
             selectionColor="#3B426B"
           />
           <Text
@@ -121,14 +126,15 @@ export default function Home() {
               fontFamily: "BebasNeue_400Regular",
             }}
           >
-            Write your high school average
+            Write your first average
           </Text>
           <Input
+            value={parseFloat(valueTwo)}
             onChangeText={(text) => setValueTwo(text)}
-            placeholder="9,0"
+            placeholder="7,0"
             placeholderTextColor="#8393EE"
-            keyboardType="decimal-pad"
-            returnKeyType="send"
+            keyboardType="numeric"
+            returnKeyType="next"
             selectionColor="#3B426B"
           />
         </ContainerInput>
