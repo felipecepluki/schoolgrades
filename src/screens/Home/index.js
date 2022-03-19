@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import {
+  LogBox,
   Text,
   StatusBar,
   TouchableWithoutFeedback,
@@ -21,11 +22,13 @@ import {
 } from "./styles";
 
 export default function Home() {
-  const [yearDivision, setYearDivision] = useState(0);
+  const [yearDivision, setYearDivision] = useState(3);
   const [valueOne, setValueOne] = useState("");
   const [valueTwo, setValueTwo] = useState("");
 
   const pickerRef = useRef();
+
+  LogBox.ignoreAllLogs();
 
   function open() {
     pickerRef.current.focus();
@@ -38,14 +41,14 @@ export default function Home() {
   function Result() {
     const schoolaverage = parseFloat(valueOne.replace(",", "."));
     const firstaverage = parseFloat(valueTwo.replace(",", "."));
-    const averageyear = schoolaverage * parseFloat(yearDivision);
-    const averageneeded = parseFloat(averageyear - firstaverage);
+    const schoolyearaverage = schoolaverage * parseFloat(yearDivision);
+    const needtopass = schoolyearaverage - firstaverage;
     const period = parseFloat(yearDivision) - parseFloat(1);
-    const averageperiod = averageneeded / period;
+    const finalaverage = needtopass / period;
     alert(
-      `You need ${averageperiod.toFixed(2)} ${averageneeded.toFixed(
+      `You need ${finalaverage.toFixed(
         2
-      )} points in each remaining bimester / quarter to pass`
+      )} points in each remaining bimester / quarter to pass the year`
     );
   }
 
