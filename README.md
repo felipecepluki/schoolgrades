@@ -64,10 +64,10 @@ The following tools were used in building the project:
 # Design
 The design of this app was made using [Figma](https://www.figma.com/). It is available at [School Grades](https://www.figma.com/file/8nADgFXJaOXiPB14g1Eug9/schoolgrades?node-id=0%3A1).
 
-The gif present at the beginning of this readme was made using [GIPHY](https://giphy.com/)
+The gif present at the beginning of this readme was made using [GIPHY](https://giphy.com/).
 
 # Contribution
-Contribute freely to this project, as long as you contribute in accordance with the MIT license guidelines. When you commit, answer the questioons to make the project as standardized as possible.
+Contribute freely to this project, as long as you contribute in accordance with the MIT license guidelines. When you commit, answer the questions to make the project as standardized as possible.
 
 For commit, run:
 ```bash
