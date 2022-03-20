@@ -3,7 +3,7 @@
 # School Grades
 > This project aims to facilitate the process of calculating the average required for annual approval, whether in school or high school.
 &nbsp;
-  
+
 <p align="center">
   <img src="https://media.giphy.com/media/o33OFvMOQi9ATfe6ft/giphy.gif" />
 </p>
@@ -17,9 +17,6 @@
 - [Installation](#installation)
     - [Pre-requisites](#pre-requisites)
     - [Run this project](#run-this-project)
-      - [Clone this repository](#clone-this-repository)
-      - [Now, generate node_modules folder](#now-generate-node_modules-folder)
-      - [Now we can finally run the project](#now-we-can-finally-run-the-project)
 - [Technologies](#technologies)
 - [Design](#design)
 - [Contribution](#contribution)
@@ -79,7 +76,6 @@ yarn commit
 
 # License
 [MIT License](./LICENSE) © School Grades
-
 
 
 
