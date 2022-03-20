@@ -39,14 +39,14 @@ export default function Home() {
   }
 
   function Result() {
-    const schoolaverage = parseFloat(valueOne.replace(",", "."));
-    const firstaverage = parseFloat(valueTwo.replace(",", "."));
-    const schoolyearaverage = schoolaverage * parseFloat(yearDivision);
-    const needtopass = schoolyearaverage - firstaverage;
+    const schoolAverage = parseFloat(valueOne.replace(",", "."));
+    const firstAverage = parseFloat(valueTwo.replace(",", "."));
+    const schoolYearAverage = schoolAverage * parseFloat(yearDivision);
+    const needToPass = schoolYearAverage - firstAverage;
     const period = parseFloat(yearDivision) - parseFloat(1);
-    const finalaverage = needtopass / period;
+    const finalAverage = needToPass / period;
     alert(
-      `You need ${finalaverage.toFixed(
+      `You need ${finalAverage.toFixed(
         2
       )} points in each remaining bimester / quarter to pass the year`
     );
