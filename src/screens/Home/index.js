@@ -41,15 +41,21 @@ export default function Home() {
   function Result() {
     const schoolAverage = parseFloat(valueOne.replace(",", "."));
     const firstAverage = parseFloat(valueTwo.replace(",", "."));
-    const schoolYearAverage = schoolAverage * parseFloat(yearDivision);
-    const needToPass = schoolYearAverage - firstAverage;
-    const period = parseFloat(yearDivision) - parseFloat(1);
-    const finalAverage = needToPass / period;
-    alert(
-      `You need ${finalAverage.toFixed(
-        2
-      )} points in each remaining bimester / quarter to pass the year`
-    );
+    if (schoolAverage <= 0 || firstAverage < 0) {
+      alert(
+        "It is not possible to do the calculation with the mean less than zero"
+      );
+    } else {
+      const schoolYearAverage = schoolAverage * parseFloat(yearDivision);
+      const needToPass = schoolYearAverage - firstAverage;
+      const period = parseFloat(yearDivision) - parseFloat(1);
+      const finalAverage = needToPass / period;
+      alert(
+        `You need ${finalAverage.toFixed(
+          2
+        )} points in each remaining bimester / quarter to pass the year`
+      );
+    }
   }
 
   const [fontsLoaded] = useFonts({
